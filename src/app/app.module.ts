@@ -3,9 +3,11 @@ import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
 import { CodemirrorModule } from 'ng2-codemirror';
+import { CodemirrorComponent } from './codemirror/codemirror.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CodemirrorComponent
   ],
   imports: [
     BrowserModule,
