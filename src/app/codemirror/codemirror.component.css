@@ -32,5 +32,12 @@ h1 {
 
 #codeEditor {
     font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
+}
+.color-secondary-blue {
+    color: #1976D2;
+}
+
+#language-choosing {
+    font-family: 'Open Sans', sans-serif;
 }
