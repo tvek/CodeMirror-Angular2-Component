@@ -12,7 +12,10 @@ export class CodemirrorComponent implements OnInit {
   @Input() config: any;
   @Input() content: string;
   constructor() {
-    this.config = { lineNumbers: true, mode: 'text/x-go' };
+    this.config = {
+      lineNumbers: true,
+      mode: 'text/x-go'
+    };
   }
   ngOnInit() {
   }
