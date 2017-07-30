@@ -1,4 +1,23 @@
 <!-- Code Mirror -->
-<h1>Codemirror with Angular 2</h1>
+<!-- NavBar -->
+<!-- Language Options -->
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="#!">C</a></li>
+  <li><a href="#!">C++</a></li>
+  <li><a href="#!">Python</a></li>
+</ul>
+<!-- End -->
+<nav>
+  <div class="nav-wrapper bgcolor-secondary-black">
+    <a href="#!" class="brand-logo" id="codeEditor">Code Editor</a>
+    <ul class="right hide-on-med-and-down">
+      <!-- Language Options -->
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Language</a></li>
+    </ul>
+  </div>
+</nav>
+<!-- End -->
+<!-- Editor -->
 <codemirror [(ngModel)]="content" [config]="config"></codemirror>
+<!-- End -->
 <!-- End -->

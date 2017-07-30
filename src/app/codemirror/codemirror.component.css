@@ -1,3 +1,36 @@
 h1 {
     font-family: 'Open Sans', sans-serif; 
 }
+
+.bgcolor-primary-blue {
+  background-color: #2196F3;
+}
+
+.bgcolor-secondary-blue {
+  background-color: #1976D2;
+}
+
+.bgcolor-primary-black {
+  background-color: #293033;
+}
+
+.bgcolor-secondary-black {
+  background-color: #202326;
+}
+
+.bgcolor-primary-grey {
+  background-color: #8A8A8A;
+}
+
+.bgcolor-secondary-grey {
+  background-color: #717171;
+}
+
+.bgcolor-normal-black {
+  background-color: #000000;
+}
+
+#codeEditor {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}

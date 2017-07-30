@@ -2,6 +2,8 @@ import { Component, OnInit, Input } from '@angular/core';
 import 'ng2-codemirror';
 import 'codemirror/mode/go/go';
 
+declare var $: any;
+
 @Component({
   selector: 'app-codemirror',
   templateUrl: './codemirror.component.html',
@@ -18,6 +20,7 @@ export class CodemirrorComponent implements OnInit {
     };
   }
   ngOnInit() {
+        $('.dropdown-button').dropdown();
   }
 
 }
