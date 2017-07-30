@@ -24,7 +24,15 @@
   </div>
 </nav>
 <!-- End -->
-<!-- Editor -->
-<codemirror [(ngModel)]="content" [config]="config"></codemirror>
+<!-- Card For CodeEditor -->
+    <div class="row">
+        <div class="col s12 m6 l11 codeEditorStyle">
+            <div class="card">
+                <!-- Editor -->
+                <codemirror [(ngModel)]="content" [config]="config"></codemirror>
+                <!-- End -->
+            </div>    
+        </div>   
+    </div>
 <!-- End -->
 <!-- End -->

@@ -41,3 +41,8 @@ h1 {
 #language-choosing {
     font-family: 'Open Sans', sans-serif;
 }
+
+.codeEditorStyle {
+    margin-left: -1% !important;
+    margin-top: -0.5%;
+}
