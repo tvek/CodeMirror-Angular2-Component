@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import 'ng2-codemirror';
-import 'codemirror/mode/go/go';
+import 'codemirror/mode/python/python';
 
 declare var $: any;
 
@@ -16,7 +16,10 @@ export class CodemirrorComponent implements OnInit {
   constructor() {
     this.config = {
       lineNumbers: true,
-      mode: 'text/x-go'
+      mode: 'text/x-python',
+      electricChars: true,
+      matchBrackets: true,
+      autoClearEmptyLines: true
     };
   }
   ngOnInit() {
