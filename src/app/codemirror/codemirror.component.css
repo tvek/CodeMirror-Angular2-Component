@@ -33,6 +33,7 @@ h1 {
 #codeEditor {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
+    margin-left: 0.5%;
 }
 .color-secondary-blue {
     color: #1976D2;
