@@ -25,7 +25,7 @@ export class CodemirrorComponent implements OnInit {
       autoCloseBrackets: true,
       autoClearEmptyLines: true,
       theme: 'monokai',
-      scrollbarStyle: 'simple'
+      scrollbarStyle: 'simple',
     };
   }
   ngOnInit() {
