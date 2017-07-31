@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import 'ng2-codemirror';
 import 'codemirror/mode/python/python';
+import 'codemirror/keymap/sublime';
 
 declare var $: any;
 
@@ -18,6 +19,7 @@ export class CodemirrorComponent implements OnInit {
       lineNumbers: true,
       mode: 'text/x-python',
       electricChars: true,
+      keyMap: 'sublime',
       matchBrackets: true,
       autoCloseBrackets: true,
       autoClearEmptyLines: true,
