@@ -19,6 +19,7 @@ export class CodemirrorComponent implements OnInit {
       mode: 'text/x-python',
       electricChars: true,
       matchBrackets: true,
+      autoCloseBrackets: true,
       autoClearEmptyLines: true,
       theme: 'monokai'
     };
