@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import 'ng2-codemirror';
 import 'codemirror/mode/python/python';
 import 'codemirror/keymap/sublime';
+import 'codemirror/addon/scroll/simplescrollbars.js';
 
 declare var $: any;
 
@@ -23,7 +24,8 @@ export class CodemirrorComponent implements OnInit {
       matchBrackets: true,
       autoCloseBrackets: true,
       autoClearEmptyLines: true,
-      theme: 'monokai'
+      theme: 'monokai',
+      scrollbarStyle: 'simple'
     };
   }
   ngOnInit() {
