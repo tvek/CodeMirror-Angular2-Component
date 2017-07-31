@@ -19,7 +19,8 @@ export class CodemirrorComponent implements OnInit {
       mode: 'text/x-python',
       electricChars: true,
       matchBrackets: true,
-      autoClearEmptyLines: true
+      autoClearEmptyLines: true,
+      theme: 'monokai'
     };
   }
   ngOnInit() {
