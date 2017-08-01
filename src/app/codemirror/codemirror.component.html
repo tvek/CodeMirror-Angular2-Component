@@ -2,9 +2,16 @@
 <!-- NavBar -->
 <!-- Language Options -->
 <ul id="dropdown1" class="dropdown-content">
-  <li><a href="#!">C</a></li>
-  <li><a href="#!">C++</a></li>
-  <li><a href="#!">Python</a></li>
+  <li><a (click)="changeLanguage('c')" href="#!">C</a></li>
+  <li><a (click)="changeLanguage('c++')" href="#!">C++</a></li>
+  <li><a (click)="changeLanguage('python')" href="#!">Python</a></li>
+</ul>
+<!-- End -->
+<!-- Theme Options -->
+<ul id="dropdown2" class="dropdown-content">
+  <li><a (click)="changeTheme('monokai')" href="#!">Monokai</a></li>
+  <li><a (click)="changeTheme('neo')" href="#!">Neo</a></li>
+  <li><a (click)="changeTheme('meat')" href="#!">Meat</a></li>
 </ul>
 <!-- End -->
 <nav>
@@ -15,6 +22,11 @@
         </span>Code Editor
     </a>
     <ul class="right hide-on-med-and-down">
+      <!-- Theme Options -->
+      <li>
+          <a class="dropdown-button" id="theme-choosing" href="#!" data-activates="dropdown2">Theme 
+          </a>
+      </li>
       <!-- Language Options -->
       <li>
           <a class="dropdown-button" id="language-choosing" href="#!" data-activates="dropdown1">Language 
@@ -29,7 +41,8 @@
         <div class="col s12 m6 l11 codeEditorStyle">
             <div class="card">
                 <!-- Editor -->
-                <codemirror [(ngModel)]="content" [config]="config"></codemirror>
+                <codemirror [(ngModel)]="content" [config]="config">
+></codemirror>
                 <!-- End -->
             </div>    
         </div>   
